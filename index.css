@@ -100,7 +100,15 @@ h1, .modal-content h2, .modal-content p {
 
 /* Adding a fancy border to the certificate content */
 #certificateContent {
-  background: #f9f9f9 url('path/to/your/decorative-border-image.png') center/contain no-repeat;
+  background-image: url('https://pngtree.com/freepng/beautiful-rectangle-frame-shapes-with-rainbow-border_6217818.html');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+ 
+}
+#certificateContent p {
+  font-size: 21px; 
+  white-space: nowrap;
 }
 
 /* Adjust button styles to fit the theme */

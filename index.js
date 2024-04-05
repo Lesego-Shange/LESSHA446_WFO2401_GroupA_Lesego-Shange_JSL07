@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
   
       // 🚨 Get input values
       const studentNameInput = document.getElementById('studentName');
-      const personalMessageInput = ;
-      const courseNameInput = ; 
+      const personalMessageInput =document.getElementById('personalMessage');
+      const courseNameInput = document.getElementById('courseName'); 
   
       const studentName = studentNameInput.value;
       const personalMessage = personalMessageInput.value;
@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Please fill in all fields');
         return;
       }
+      
   
       // 🚨 Generate certificate content dynamically
       certificateContent. = `
