@@ -23,7 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Please fill in all fields');
         return;
       }
-      
+      // Create a close button dynamically
+      const closeButton = document.createElement('button');
+      closeButton.textContent = 'Close';
+      closeButton.classList.add('close-button');
+
+      // Append the close button to the span
+      closeSpan.appendChild(closeButton);
+
   
       // 🚨 Generate certificate content dynamically
       certificateContent. = `
