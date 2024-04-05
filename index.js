@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
       closeButton.classList.add('close-button');
 
       // Append the close button to the span
-      closeSpan.appendChild(closeButton);
+      closeModal.appendChild(closeButton);
 
   
       // 🚨 Generate certificate content dynamically
