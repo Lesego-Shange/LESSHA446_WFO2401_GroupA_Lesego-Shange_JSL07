@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         alert('Please fill in all fields');
         return;
       }
+
       // Create a close button dynamically
       const closeButton = document.createElement('button');
       closeButton.textContent = 'Close';
@@ -33,9 +34,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
   
       // 🚨 Generate certificate content dynamically
-      certificateContent. = `
-      <h3>${studentName}</h3>
-    `;
+      certificateContent.innerHTML = `
+          <h1>Certificate of Achievement</h1>
+          <p>This is to certify that:</p>
+          <h2>${studentName}</h2>
+          <p>has almost completed the:</p>
+          <h2>${courseName}</h2>
+          <p>with legendary perseverance and world-class badassery for never giving up🏆</p>
+          <img src="logo.png" alt="Logo"> 
+          <p>${personalMessage}</p>
+      `;
+
     
       //  Display the modal
       modal.style.display = 'block';
