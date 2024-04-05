@@ -52,6 +52,16 @@ document.addEventListener('DOMContentLoaded', function () {
     
       //  Display the modal
       modal.style.display = 'block';
+
+       // Dynamically adjust CSS for logo size
+       const logo = certificateContent.querySelector('img');
+       if (logo) {
+           logo.style.maxWidth = '85%'; // Adjust the max-width as needed
+           logo.style.height = 'auto';
+           logo.style.display = 'block';
+           logo.style.margin = '0 auto';
+       }
+ 
   
       // Clear the form inputs
       studentNameInput.value = '';
