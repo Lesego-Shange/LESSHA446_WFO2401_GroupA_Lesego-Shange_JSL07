@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
+      // Clear the content of the close span
+      closeModal.innerHTML = '';
+
+
       // Create a close button dynamically
       const closeButton = document.createElement('button');
       closeButton.textContent = 'Close';
